@@ -1,6 +1,6 @@
 let acceptedOffersDashboard = p5i => {
   p5i.disableFriendlyErrors = true;
-  p5i.agents = [ "Family", "MDocBroker", "Recruiter", "Smuggler", "Facilitator", "TDocBroker" ];
+  p5i.agents = [ "Family", "MyanmarDocumentBroker", "Recruiter", "Smuggler", "Facilitator", "ThailandDocumentBroker" ];
   p5i.colors = [ "#003f5c", "#3f4d84", "#8c4e95", "#d34b84", "#fe5f58", "#ff920d" ];
 
   let w,h,b;
@@ -85,7 +85,10 @@ let acceptedOffersDashboard = p5i => {
       p5i.push();
       p5i.textAlign(p5i.LEFT);
       p5i.fill( "#000" );
-      p5i.text( p5i.agents[i], i*150 + 90, p5i.height - 60  )
+      let t = p5i.agents[i];
+      if( t == "ThailandDocumentBroker" ) t = "TDocBroker";
+      if( t == "MyanmarDocumentBroker" ) t = "MDocBroker";
+      p5i.text( t, i*150 + 90, p5i.height - 60  )
       p5i.fill( p5i.colors[i] );
       p5i.ellipse( i*150 + 70, p5i.height-50, 20, 20);
       p5i.fill( "#000" );

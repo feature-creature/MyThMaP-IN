@@ -220,7 +220,7 @@ let pathwaysDashboard = p5i => {
     p5i.translate(b - 15, b*0.5);
     p5i.textAlign(p5i.LEFT,p5i.CENTER);
     p5i.fill(100);
-    p5i.text("Precarity",0,-b*0.25);
+    p5i.text("Pathway Precarity",0,-b*0.25);
     p5i.pop();
     p5i.pop();
   }
