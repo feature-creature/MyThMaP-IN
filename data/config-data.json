@@ -1,0 +1,242 @@
+{
+  "ticks":"1825",
+  "environment":{
+    "width":"1920",
+    "height":"1080",
+    "subareas":{
+      "Yangon":   {"area":"origin", "type":"urban", "boundaries":[ [38.4,550], [576,1026] ] },
+      "Magway":   {"area":"origin", "type":"urban", "boundaries":[ [326.4,54], [576,507.6] ] },
+      "Myawaddy": {"area":"origin", "type":"urban", "boundaries":[ [672,324], [902.4,756] ] },
+      "Rakhine":  {"area":"origin", "type":"rural", "boundaries":[ [38.4,54], [288,259.2] ] },
+      "Bago":     {"area":"origin", "type":"rural", "boundaries":[ [38.4,302.4], [288,507.6] ] },
+      "Bangkok":  {"area":"destination", "type":"urban", "boundaries":[ [1480,400], [1842.4,1026] ] },
+      "Mae Sot":  {"area":"destination", "type":"urban", "boundaries":[ [1017.6,324], [1248,756] ] },
+      "Tak":      {"area":"destination", "type":"rural", "boundaries":[ [1056,54], [1301.6,216] ] },
+      "Phang Nga":{"area":"destination", "type":"rural", "boundaries":[ [1017.6,810], [1401.6,1026] ] },
+      "O 1":      {"area":"border", "type":"urban", "boundaries":[ [940.8,486], [979.2,594] ] },
+      "U 1":      {"area":"border", "type":"rural", "boundaries":[ [940.8,324], [979.2,432] ] },
+      "U 2":      {"area":"border", "type":"rural", "boundaries":[ [940.8,648], [979.2,756] ] }
+    }
+  },
+  "agencies":{
+    "1" : {"subarea":"Yangon", "loc":[96,972] },
+    "2" : {"subarea":"Yangon", "loc":[230.4,972] },
+    "3" : {"subarea":"Yangon", "loc":[364.8,972] },
+    "4" : {"subarea":"Yangon", "loc":[499.2,972] }
+  },
+  "offices":{
+    "1" : {"subarea":"Yangon", "loc":[307.2,783] },
+    "2" : {"subarea":"Magway", "loc":[451.2,280.8] }
+  },
+  "agents":{
+    "migrants":{
+        "Yangon":400,
+        "Magway":200,
+        "Myawaddy":200,
+        "Rakhine":100,
+        "Bago":100,
+        "Bangkok":0,
+        "Mae Sot":0,
+        "Tak":0,
+        "Phang Nga":0
+      },
+    "intermediaries":{
+      "smugglers":{
+        "Yangon":0,
+        "Magway":0,
+        "Myawaddy":15,
+        "Rakhine":0,
+        "Bago":0,
+        "Bangkok":0,
+        "Mae Sot":0,
+        "Tak":0,
+        "Phang Nga":0
+      },
+      "myanmarDocumentBrokers":{
+        "Yangon":5,
+        "Magway":3,
+        "Myawaddy":3,
+        "Rakhine":0,
+        "Bago":0,
+        "Bangkok":0,
+        "Mae Sot":0,
+        "Tak":0,
+        "Phang Nga":0
+      },
+      "thailandDocumentBrokers":{
+        "Yangon":0,
+        "Magway":0,
+        "Myawaddy":0,
+        "Rakhine":0,
+        "Bago":0,
+        "Bangkok":10,
+        "Mae Sot":3,
+        "Tak":0,
+        "Phang Nga":5
+      },
+      "recruiters":{
+        "Yangon":20,
+        "Magway":0,
+        "Myawaddy":8,
+        "Rakhine":0,
+        "Bago":0,
+        "Bangkok":0,
+        "Mae Sot":0,
+        "Tak":0,
+        "Phang Nga":0
+      },
+      "facilitators":{
+        "Yangon":2,
+        "Magway":8,
+        "Myawaddy":2,
+        "Rakhine":5,
+        "Bago":5,
+        "Bangkok":0,
+        "Mae Sot":0,
+        "Tak":0,
+        "Phang Nga":0
+      }
+    },
+    "employers":{
+      "agriculture":{
+        "Yangon":0,
+        "Magway":0,
+        "Myawaddy":0,
+        "Rakhine":0,
+        "Bago":0,
+        "Bangkok":0,
+        "Mae Sot":0,
+        "Tak":3,
+        "Phang Nga":3
+      },
+      "construction":{
+        "Yangon":0,
+        "Magway":0,
+        "Myawaddy":0,
+        "Rakhine":0,
+        "Bago":0,
+        "Bangkok":5,
+        "Mae Sot":5,
+        "Tak":0,
+        "Phang Nga":3
+      },
+      "fishing":{
+        "Yangon":0,
+        "Magway":0,
+        "Myawaddy":0,
+        "Rakhine":0,
+        "Bago":0,
+        "Bangkok":6,
+        "Mae Sot":0,
+        "Tak":0,
+        "Phang Nga":3
+      },
+      "manufacturing":{
+        "Yangon":0,
+        "Magway":0,
+        "Myawaddy":0,
+        "Rakhine":0,
+        "Bago":0,
+        "Bangkok":12,
+        "Mae Sot":8,
+        "Tak":3,
+        "Phang Nga":3
+      },
+      "services":{
+        "Yangon":0,
+        "Magway":0,
+        "Myawaddy":0,
+        "Rakhine":0,
+        "Bago":0,
+        "Bangkok":8,
+        "Mae Sot":8,
+        "Tak":0,
+        "Phang Nga":8
+      }
+    }
+  },
+  "sectors":{
+    "agriculture":{ 
+      "maximumEmployees":15,
+      "requiredDocuments":[ [1,"none"] ]
+    },
+    "construction":{ 
+      "maximumEmployees":50,
+      "requiredDocuments":[ [0.25,"passport"], [0.5,"work permit"], [1,"none"] ] 
+    },
+    "fishing":{ 
+      "maximumEmployees":30,
+      "requiredDocuments":[ [0.25,"passport"], [0.5,"work permit"], [1,"none"] ]
+    },
+    "manufacturing":{ 
+      "maximumEmployees":100,
+      "requiredDocuments":[ [0.25,"passport"], [0.5,"work permit"], [1,"none"] ]
+    },
+    "services":{ 
+      "maximumEmployees":15,
+      "requiredDocuments":[ [1,"none"] ] 
+    }    
+  },
+  "links":{
+    "intermediaryToIntermediary":{
+      "Facilitator":{
+        "Facilitator" : 0,
+        "Recruiter" : 0.25,
+        "MyanmarDocumentBroker" : 0,
+        "ThailandDocumentBroker" : 0,
+        "Smuggler": 0.25
+      },
+      "Recruiter":{
+        "Facilitator" : 0,
+        "Recruiter" : 0,
+        "MyanmarDocumentBroker" : 0,
+        "ThailandDocumentBroker" : 0,
+        "Smuggler": 0
+      },
+      "MyanmarDocumentBroker":{
+        "Facilitator" : 0,
+        "Recruiter" : 0.10,
+        "MyanmarDocumentBroker" : 0,
+        "ThailandDocumentBroker" : 0,
+        "Smuggler": 0
+      },
+      "ThailandDocumentBroker":{
+        "Facilitator" : 0,
+        "Recruiter" : 0,
+        "MyanmarDocumentBroker" : 0,
+        "ThailandDocumentBroker" : 0,
+        "Smuggler": 0
+      },
+      "Smuggler":{
+        "Facilitator" : 0,
+        "Recruiter" : 0,
+        "MyanmarDocumentBroker" : 0,
+        "ThailandDocumentBroker" : 0,
+        "Smuggler": 0
+      }
+    },
+    "intermediaryToEmployer":{
+      "Facilitator":0.25,
+      "Recruiter":1,
+      "MyanmarDocumentBroker":0,
+      "ThailandDocumentBroker":0,
+      "Smuggler":1
+    },
+    "employerToIntermediary":{
+      "Facilitator":0,
+      "Recruiter":0,
+      "MyanmarDocumentBroker":0,
+      "ThailandDocumentBroker":0.5,
+      "Smuggler":0
+    }
+  },
+  "documents":{
+    "border pass":{"type":"border pass","cost":100,"expiration":100 },
+    "passport":{"type":"passport","cost":1000,"expiration":1825 },
+    "work permit":{"type":"work permit","cost":1000,"expiration":730 }
+  },
+  "money":{
+    "minimum":0,
+    "maximum":100000 
+  }
+}
