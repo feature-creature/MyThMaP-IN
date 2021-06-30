@@ -157,6 +157,7 @@ let pathwaysDashboard = p5i => {
             let x2 = p5i.map( t, 1, 1825, b + 20, w + 20 );
             let y2 = p5i.map( precarity[ pathways[p] ].s / precarity[ pathways[p] ].c, 0, 1, h-2, b );
             p5i.strokeWeight(precarity[ pathways[p] ].c)
+            p5i.strokeWeight(6)
             p5i.line( x1, y1, x2, y2);                
           }
         }
@@ -185,6 +186,16 @@ let pathwaysDashboard = p5i => {
       let y = p5i.map( i, 0, sx, b, h );
       p5i.line(x,h,x,h+5);
       if(i!=0) p5i.text(i,x,h+10)
+    }
+    for( let i=0; i<pathways.length; i++){
+      p5i.push();
+      p5i.textAlign(p5i.LEFT);
+      p5i.fill( "#000" );
+      p5i.text( pathways[i], i*140 + 100, p5i.height - 70  )
+      p5i.fill( colors[i] );
+      p5i.ellipse( i*140 + 80, p5i.height-60, 20, 20);
+      p5i.fill( "#000" );
+      p5i.pop();
     }
 
     // y axis
